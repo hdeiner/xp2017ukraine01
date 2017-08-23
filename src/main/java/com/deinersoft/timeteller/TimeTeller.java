@@ -93,7 +93,7 @@ public class TimeTeller {
 
                 Message message = new MimeMessage(session);
                 message.setFrom(new InternetAddress("howarddeiner.xyzzy@gmail.com"));
-                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("howard.deiner@deinersoft.com"));
+                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("howarddeiner.xyzzy@gmail.com"));
                 message.setSubject("TimeTeller");
                 message.setText("The time is now " + result);
 
