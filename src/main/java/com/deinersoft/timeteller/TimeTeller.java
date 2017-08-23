@@ -50,22 +50,22 @@ public class TimeTeller {
                 }
                 break;
             case 2:
-                String[] words = {"twelve", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven"};
-                String[] fuzzWords = {"", "almost ten after", "ten after", "a quarter after", "twenty after", "almost half past", "half past", "almost twenty before", "twenty before", "a quarter of", "ten of", "almost"};
-                String[] partOfDay = {"at night", "in the morning", "in the afternoon", "in the evening"};
+                String[] s1 = {"twelve", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven"};
+                String[] s2 = {"", "almost ten after", "ten after", "a quarter after", "twenty after", "almost half past", "half past", "almost twenty before", "twenty before", "a quarter of", "ten of", "almost"};
+                String[] s3 = {"at night", "in the morning", "in the afternoon", "in the evening"};
 
                 if (k >= 30) j++;
 
                 if (j >= 3) {
-                    result += fuzzWords[(j+2)/5] + " ";
+                    result += s2[(j+2)/5] + " ";
                 }
                 if (j < 35) {
-                    result += words[i%12];
+                    result += s1[i%12];
                 }  else {
-                    result += words[(i+1)%12];
+                    result += s1[(i+1)%12];
                 }
 
-                result += " " + partOfDay[i/6];
+                result += " " + s3[i/6];
 
                 if (whichOne == 2) {
                     result += " Zulu";
