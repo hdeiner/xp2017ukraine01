@@ -22,7 +22,7 @@ public class TimeTeller {
 
     }
 
-    static String getResult(int whichOne, int how, boolean special) {
+    public static String getResult(int whichOne, int how, boolean special) {
         String result = "";
         int i = 0;
         int j = 0;
