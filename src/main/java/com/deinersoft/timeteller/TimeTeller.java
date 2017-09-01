@@ -59,10 +59,8 @@ public class TimeTeller {
                 } else if (j <= 8) {
                     result = result + "a little after ";
                 } else if (j <= 13) {
-                    result = result + "almost ten after ";
-                } else if (j <= 18) {
                     result = result + "about ten after ";
-                } else if (j <= 23) {
+                } else if (j <= 18) {
                     result = result + "about a quarter after ";
                 } else if (j <= 23) {
                     result = result + "about twenty after ";
